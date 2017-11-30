@@ -1,0 +1,45 @@
+.accordion__card{
+    margin: .5em 0;
+}
+
+
+.accordion__header{
+    color: #555;
+    cursor: pointer;
+    display: block;
+    background: #EEE;
+    width: 100%;
+    padding: .75em;
+    border-radius: 2px;
+    border: 1px solid #D8D8D8;
+
+    &:hover {
+        background: @white;
+    }
+}
+
+
+.accordion__header .fa{
+    margin-right: .5em;
+}
+
+
+.accordion__content{
+    padding: 1em;
+    overflow: hidden;
+    display: none;
+    transition-property: all;
+    transition-duration: .5s;
+}
+
+
+.accordion__card.show .accordion__header .fa{
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+
+
+.accordion__card.show .accordion__content{
+    display: block;
+}
