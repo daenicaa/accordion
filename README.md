@@ -1,4 +1,4 @@
-# accordion
+# A simple Accordion
 
 Dependencies:
   - Jquery - used CDN for this
